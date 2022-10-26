@@ -1,0 +1,37 @@
+/* charset serve para configurar acentuções na pagina caso haja problema de formato*/
+@charset "UTF-8"; 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(to right, #00A5C5 1%, #124E78);
+
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px #6e0d0ab4;
+    
+}
+h1{
+    color: #F2BB05;
+    text-align: center;
+    text-shadow: 1px 1px 2px #8d6f0ef1;
+}
+h2{
+    color: #261C80;
+}
+p{
+    text-align: justify;
+}
+footer{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    color: #F2BB05;
+    text-shadow: 1px 1px 2px #463704;
+}

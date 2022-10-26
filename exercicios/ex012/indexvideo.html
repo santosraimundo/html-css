@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <title>Carregando Vídeos</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Vídeos carregado localmente
+        </h1>
+    </header>
+    <p>
+        Vamos começar a carregar:
+    </p>
+    <!--1º Forma de carregar video-->
+    <video src="midea/introduçao.mp4" controls poster="imagem/logo1.png" width="600"></video>
+    <p>
+        <!--2º Forma de carregar vídeo completa-->
+        <video  width="600"  poster="imagem/logo.png" controls autoplay  >
+            <source src="midea/visao.mp4" type="video/mp4">
+            <p>
+                Caso não conseguir reproduzir o vídeo pode fazer o download do arquivo. <a href="midea/visao.mp4" download="visão.mp4" type="video/mp4">Visão Geral de JavaScript</a>
+            </p>
+        </video>
+    </p>
+    
+</body>
+</html>

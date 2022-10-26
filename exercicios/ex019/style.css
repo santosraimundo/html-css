@@ -1,0 +1,37 @@
+
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+body{
+    font-family: 'Joan', 'serif';
+    background-color: #4dcbb0fb;
+    font-weight: normal;
+
+}
+
+p{
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 1em;
+}
+h1#start{ /* Há este tipo de selector denominamos selector personalisado (id)*/
+    text-align: center;
+    text-decoration: underline;
+    font-size: 3em;
+    font-style: italic;
+}
+/* Há este tipo de selector denominamos selector personalisado (class)*/
+.basico{
+    color: #0000ff;
+}
+.intermediario{
+    color: crimson;
+    font-style: italic;
+}
+.avancado{
+    color: #0e4c55f3;
+    font-weight: bolder;
+}
+
+.destaque{
+    background-color: #ffd700;
+}

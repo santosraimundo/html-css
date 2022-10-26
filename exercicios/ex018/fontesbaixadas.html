@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas Baixadas</title>
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <style>
+        /* Este selector @font-face serve para colocar fonts no css apartir de um site que foi baixada*/
+        @font-face {
+            font-family: 'happy' ;
+            src: url('fonts/Westwood\ Studio.ttf') format('truetype'); 
+        }
+        @font-face {
+            font-family: 'Phi';
+            src: url('fonts/Joan-Regular.ttf') format('truetype');
+        }
+        body{
+            font-family: 'happy', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 3em;
+        }
+        h1{
+            font-family: 'Phi', serif ;
+            font-weight: normal;
+            font-size: 1.5em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Empresa PhiHope Technology Limitada.</h1>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates illum dolorum, in nostrum inventore nulla corporis ab et laborum facere autem saepe eveniet repudiandae voluptatum hic deserunt iusto obcaecati! Enim.</p>
+
+
+</body>
+</html>

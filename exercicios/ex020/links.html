@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando outros tipos de pseudo-classe</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            color:red;
+        }
+        a:visited{
+            color: cadetblue;
+        }
+        a:hover{
+            color: #ac940b;
+            text-decoration: underline;
+        }
+        a:active{
+            color: black;
+        }
+        .espe::before{
+            content: '=>';
+            
+        }
+        .espe::after{
+            content: '<=';
+        }
+      
+    </style>
+</head>
+<body>
+    <h1>Personalizado links</h1>
+    <ul type="circle">
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external" class="espe">Site do CursoemVideo</a></li>
+    </ul>
+
+    <hr>
+
+    <video controls width="600">
+        <source src="videos/A CINTURA.mp4" type="video/mp4">
+        <source src="videos/A Cintura.mkv" type="video/mp4">
+        <source src="videos/A CINTURA.ogv" type="video/ogg">
+        <source src="videos/A Cintura.webm" type="video/webm">
+    </video>
+    <p>caso não conseguir reproduzir basta no <a href="videos/A CINTURA.mp4" download="A CINTURA.mp4" type="video/mp4">link para baixar.</a></p>
+</body>
+</html>

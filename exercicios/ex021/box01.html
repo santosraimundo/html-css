@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <style>
+        @charset "UTF-8";
+        body{
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            min-width: 280px;
+            max-width: 1000px;
+        }
+        header{
+            background-color: white;
+            margin: 10px;
+            padding: 10px;
+        
+        }
+        header > h1{
+            text-align: center;
+            border-radius: 5px ;
+        }
+        nav{
+            background-color: dimgray;
+            padding: 10px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.277);
+            border-radius: 5px ;
+            
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            transition-duration: 0.5s;
+            font-weight: bolder;
+          
+        }
+        nav > a:hover{
+            background-color: black;
+            
+            
+        }
+        h1{
+            box-shadow: inset 1px 0px 20px 6px #0000003f;
+            border-radius: 5px ;
+        }
+        nav > a:active{
+            color: red;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 18px 4px;
+            box-shadow: 1px 1px 3px 1px #0000005a;
+        }
+        #assunto{
+            background-color: darkgray;
+            text-align: justify;
+            padding: 10px;
+           
+        }
+        #assunto > h1{
+            font-size: 2em;
+            text-align: center;
+            color: black;
+        }
+        article{
+            background-color:blanchedalmond;
+            text-indent: 2px;
+            
+
+        }
+        article > h2{
+            text-align: center;
+        }
+        article > p{
+            text-align: justify;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        aside{
+            background-color: cadetblue;
+            text-align: center;
+            font-weight: bold;
+        
+        }
+      
+        footer{
+            background-color: black;
+            padding: 5px;
+            color: white;
+            text-align: center;
+            
+        }
+        div#bola{
+
+            background-color: white;
+            height: 300px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px black;
+            
+
+
+
+        }
+        
+    </style>
+</head>
+<body>
+    <header> 
+        <h1>Meu Site</h1>
+        <nav>
+            
+                <a href="#">Home</a>
+                <a href="#">Help</a>
+                <a href="#">About</a>
+                <a href="#">Curiosidade</a>
+                <a href="#">Contactos</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <h1>Tecnológia</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi corporis libero. Est debitis, id ut, explicabo suscipit vel quibusdam ea totam provident cupiditate amet ex tenetur vitae aut fugiat.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre Angola</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi delectus distinctio eaque voluptatum animi deserunt suscipit et temporibus dolor, quia facilis, quaerat dolores quisquam illum, quos dignissimos? Distinctio, quas mollitia.</p>
+                <aside>
+                    <p>Artigo escrito Santos Mateus Raimundo</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;SANTOS MATEUS RAIMUNDO.
+    </footer>
+
+    <div id="bola">
+
+    </div>
+    
+</body>
+</html>

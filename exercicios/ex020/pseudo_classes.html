@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conhecendo Pseudo-Classe</title>
+    <style>
+        .especial{
+            background-color: lightgray;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            display: inline-block; /* serve para colocar tudo em uma mesma linha*/
+        }
+        div#d1:hover{
+            background-color: yellow;
+        }
+        div#d2:hover{
+            background-color: aqua;
+        }
+        div#d3:hover{
+            background-color: red;
+        }
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        div#d4 > p{ /* vai ocultar o paragrafo que esta dentro da div*/
+            display: none;
+        }
+        div#d4:hover{
+            color: #ff00d4e4;
+        }
+        div#d4:hover >p{ /* vai mostrar o paragrafo que esta dentro da div*/
+            display: block;
+            background-color: gold;
+            color:#f80606fd;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="especial" id="d1">01</div>
+    <div class="especial" id="d2">02</div>
+    <div class="especial" id="d3">03</div>
+    <hr>
+
+    <h1>Exempro com hover, visited, active, checked, empty e focus.</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div id="d4">
+        Entra com motivação.
+        <p>Supresa pela primeira vez.</p>
+    </div>
+    <p>fim do exemplo.</p>
+
+    
+</body>
+</html>

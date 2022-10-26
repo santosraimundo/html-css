@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Imagens que se adaptam a qualquer ecrã.
+        </h1>
+    </header>
+        <section>
+            <p>Vamos começa a presentar imagem pequena indo para o grande:</p>
+        </section>
+        <nav>
+            <picture>
+               
+                <source media="(max-width: 750px)" srcset="imagens/foto-s.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-r.png" alt="Imagens Dinâmicas">
+              
+            </picture>
+
+            <ul type="square"><li><a href="index1.html" target="_self" rel="next">vai a página foto SR</a></li>
+                <li>
+                    <a href="desafio/index.html" target="_self" rel="next">Acede o desafio</a>
+                </li>
+            </ul>
+            
+            <h2> Vamos reproduzir <mark>Áudio.</mark></h2>
+            <!-- 1º forma para produzir áudio simples-->
+            <audio src="midea/semanaiban.mp3" controls></audio>
+            
+            <p>
+                <!--2º Forma para produzir áudio completa e temos 3 elementos no parâmetro do preload auto; metadata e none-->
+                <audio preload="metadata" controls  >
+                    <source src="midea/emcimbiniremake.mp3" type="audio/mpeg">
+                    <source src="midea/emcimbiniremake.ogg" type="audio/ogg">
+                    <source src="midea/emcimbiniremake.wav" type="audio/wav">
+                    <p>Caso não conseguir reproduzir basta dar um click no link a seguir para baixar o áudio <a href="midea/semanaiban.mp3" download="semanaiban.mp3" type="audio/mpeg">Download</a> </p>
+                
+                </audio>
+            </p>
+        </nav>
+   
+</body>
+</html>

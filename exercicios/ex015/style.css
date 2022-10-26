@@ -1,0 +1,19 @@
+/* Este é argumento que permite os acentos serem formatados*/
+@charset "UTF-8"; 
+
+body{
+    background-color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    background-color: grey;
+    text-align: center;
+    color: rgba(25, 25, 143, 0.866);
+}
+h2{
+    background-color: darkgray;
+
+}
+p{
+    text-align: justify;
+}

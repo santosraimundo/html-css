@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Tranbalhando com tipo de listas</h1>
+    <h2>Lista Ordenada (<mark>Ordered List</mark>)</h2>
+    <!--Os type da lista ol são: 1, A, a, I, i--> 
+    <ol> 
+        <li>
+            Cursos de Tecnólogia 
+        </li>
+        <ol type="I">
+            <li><abbr title="HyperText Markup Languange">HTML</abbr></li>
+            <li><abbr title="Cascading Style Sheets">CSS</abbr></li>
+            <li><abbr title="JavaScript">JS</abbr></li>
+
+        </ol>
+    </ol>
+    <h3>Lista não Ordenada (<mark>Unordered List</mark>)</h3>
+    <!--Os type da lista ul são: disc, circle, square-->
+    <ul>
+        <li>
+            Desportos Favoritos
+        </li>
+        <ul >
+            <li>Futebol</li>
+            <li>Basquetebol</li>
+            <li>Natação</li>
+        </ul>
+    </ul>
+
+    <h4>Lista de Definição (Definition List)</h4>
+    <dl>
+        
+            <dt><strong><mark>HTML</mark></strong></dt>
+        
+        <dd>Linguagem de marcação que trata do conteúdo, semático do site.</dd>
+        <dt><strong><mark>CSS</mark></strong></dt>
+        <dd>Linguagem que trata de estilo e forma do site.</dd>
+        <dt><strong><mark>JavaScript</mark></strong></dt>
+        <dd>Linguagem que trata de interatividade do site.</dd>
+    </dl>
+
+    <h4>Colocando uma lista detro da outra (<mark>aninhamento</mark>)</h4>
+    <ol>
+        <li><strong><em>Agendamento da rotina diária</em></strong></li>
+        <ul type="disc">
+            <li>Acordar as 05:00</li>
+            <li>Banhar-me</li>
+            <li>Vestindo</li>
+            <li>pegar a lanxeira</li>
+            <li>pegar o táxi</li>
+            <li>Chegar no Kibamgo</li>
+            <li>Aguardar o transporte da impresa</li>
+            <li>07:00 Chegar no local do trabalho</li>
+            <ol type="a">
+                <li>Entrar no site da RECODE</li>
+                <li>Dar a continuidade do curso</li>
+                <li>Fazer leitura de todos capítulos que restam</li>
+                <li>12:00 fechar o site</li>
+            </ol>
+            <ul type="square">
+                <li>Ver dois videos de HTML</li>
+                <li>Ver um vídeo de JavaScript</li>
+                <li>Ler no site da W3CSchools sobre HTML</li>
+            </ul>
+        </ul>
+    </ol>
+    
+</body>
+</html>
