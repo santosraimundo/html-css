@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 600px;
+            margin: auto;
+            
+        }
+        td{
+            border: 2px solid black;
+            padding: 2px;
+        }
+        tr:hover{
+            background-color: darkgreen;
+        }
+        th{
+            border: 2px solid black;
+            padding: 10px;
+            font-size: 1.3em;
+
+        }
+        thead, tfoot{
+            background-color: gray;
+            
+        }
+      
+        .number{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            font-style: italic;
+            background-color: #0e0eda;
+            color: white;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+     <!-- 
+        Anatomia de tabela composta(grande) em HTML5.
+        *table
+           caption => Legenda ou título de tabela.
+           thead => Cabeçalho da tabela
+           tbody => Corpo da tabela.
+           tfoot => Rodapé da tabela.
+     -->
+     <h1>Trabahando com tabela composta</h1>
+     <table>
+        <caption>Lista Populacional Angolana por Província</caption>
+        <thead>
+            <tr>
+                <th scope="col">Provincia</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Luanda</td>
+                <td class="number">2 776 125</td>
+            </tr>
+            <tr>
+                <td>Huíla</td>
+                <td class="number">876 339</td>
+            </tr>
+            <tr>
+                <td>Huambo</td>
+                <td class="number">815 685</td>
+            </tr>
+            <tr>
+                <td>Cabinda</td>
+                <td class="number">699 053</td>
+            </tr>
+            <tr>
+                <td>Benguela</td>
+                <td class="number">513 000</td>
+            </tr>
+            <tr>
+                <td>Uíge</td>
+                <td class="number">581 835</td>
+            </tr>
+            <tr>
+                <td>Malanje</td>
+                <td class="number">569 474</td>
+            </tr>
+            <tr>
+                <td>Bié</td>
+                <td class="number">512 706</td>
+            </tr>
+            <tr>
+                <td>Lunda Sul</td>
+                <td class="number">501 904</td>
+            </tr>
+            <tr>
+                <td>Cuando-Cubango</td>
+                <td class="number">361 446</td>
+            </tr>
+            <tr>
+                <td>Namibe</td>
+                <td class="number">335 892</td>
+            </tr>
+            <tr>
+                <td>Cuanza Sul</td>
+                <td class="number">319 000</td>
+            </tr>
+            <tr>
+                <td>Zaire</td>
+                <td class="number">258 599</td>
+            </tr>
+            <tr>
+                <td>Bengo</td>
+                <td class="number">217 929</td>
+            </tr>
+            <tr>
+                <td>Cunene</td>
+                <td class="number">211 000</td>
+            </tr>
+            <tr>
+                <td>Moxico</td>
+                <td class="number">177 000</td>
+            </tr>
+            <tr>
+                <td>Lunda Norte</td>
+                <td class="number">164 000</td>
+            </tr>
+            <tr>
+                <td>Cuanza Norte</td>
+                <td class="number">96 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total Populacional</th>
+                <td class="number"><strong>0000</strong></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
