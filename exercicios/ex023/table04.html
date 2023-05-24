@@ -38,14 +38,14 @@
         <caption>TABELA INFORMATIVA</caption>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">Filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Santos Raimundo</td>
                 <td>Fast Furioce X</td>
                 <td>Jonh Weak 4</td>
@@ -64,7 +64,7 @@
                 <td>Rei Juliano</td>
             </tr>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Manssanga Raimundo</td>
                 <td>Fast Furioce X</td>
                 <td>Aquaman</td>
@@ -83,6 +83,12 @@
                 <td>Fast Furioce 9</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>18 Filmes</td>
+            </tr>
+        </tfoot>
 
     </table>
 </body>
