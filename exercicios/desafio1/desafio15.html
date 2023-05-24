@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Complexa</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        table{
+            width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+            margin-top: 50px;
+            font-size: 1.4em;
+        }
+        th, td{
+            border: 2px solid black;
+        }
+        .headers{
+            background-color: #494242e0;
+            color: white;
+            font-weight: normal;
+        }
+        #ce{
+            text-align: left;
+            text-indent: 2%;
+        }
+        #ch{
+            text-align: left;
+            text-indent: 2%;
+        }
+        .number{
+            text-align: center;
+        }
+        #me{
+            text-align: center;
+        }
+        #mh{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--Build my table-->
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col" class="headers">Disciplina</th>
+                <th rowspan="2" scope="col" class="headers">Área</th>
+                <th colspan="2" scope="colgroup" class="headers">Notas</th>
+                <th rowspan="2" scope="col" class="headers">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="headers">Nota1</th>
+                <th scope="col" class="headers">Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="rowgroup">Ciências Exatas</th>
+                <td>Matemática</td>
+                <td class="number">12</td>
+                <td class="number">14</td>
+                <td class="number">13</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="number">11</td>
+                <td class="number">16</td>
+                <td class="number">13,5</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="number">10</td>
+                <td class="number">10</td>
+                <td class="number">10</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="number">14</td>
+                <td class="number">14</td>
+                <td class="number">14</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="headers" id="ce">Média de Ciência Exatas</th>
+                <td class="headers" id="me">12,6</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Ciências Humanas</th>
+                <td>História</td>
+                <td class="number">18</td>
+                <td class="number">18</td>
+                <td class="number">18</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="number">15</td>
+                <td class="number">15</td>
+                <td class="number">15</td>
+            </tr>
+            <tr>
+                <th colspan="4" scope="row" class="headers" id="ch">Media de Ciência Humanas</th>
+                <td class="headers" id="mh">16,5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
