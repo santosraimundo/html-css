@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Coluna</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: gray;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            margin: auto;
+        }
+        caption{
+            font-size: 1.5em;
+            background-color: black;
+            color: white;
+
+        }
+        th, td{
+            border: 2px solid black;
+            
+        }
+        thead th{
+            font-size: 1.4em;
+        }
+        .colname{
+            background-color: #037575;
+        }
+        .colsexy{
+            background-color: white;
+        }
+        .colprof{
+            background-color: #b80b0b;
+            
+        }
+        .year{
+            text-align: center;
+        }
+        tr:hover{
+            background-color: #ec8a09;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício para formatar um coluna Completa</h1>
+    <table>
+        <colgroup>
+            <col class="colname">
+            <col class="colsexy" span="2">
+            <col class="colprof">
+        </colgroup>
+        <caption>Cadastro de Dados</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Santos Raimundo</td>
+                <td rowspan="4">Masculino</td>
+                <td class="year">32</td>
+                <td>Desenvolvedor Web</td>
+            </tr>
+            <tr>
+                <td>Benivaldo Raimundo</td>
+                <td class="year">8</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Baruk Raimundo</td>
+                <td class="year">1</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Nério Lázaro</td>
+                <td class="year">26</td>
+                <td>Técnico de Rede</td>
+            </tr>
+            <tr>
+                <td>Manssanga Raimundo</td>
+                <td rowspan="3">Femenino</td>
+                <td class="year">30</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Janilda Raimundo</td>
+                <td class="year">4</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Deolinda da Silva</td>
+                <td class="year">23</td>
+                <td>Contabilista</td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</body>
+</html>
