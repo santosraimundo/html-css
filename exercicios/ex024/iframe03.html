@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação por iframe</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: lightslategray;
+        }
+        iframe{
+            width: 97vw;
+            height: 500px;
+            border: 2px solid black;
+            background-color: white;
+        }
+        ul li{
+            list-style-type: none;
+            
+        }
+        li a {
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover{
+            text-decoration: underline;
+            color: blue;
+
+        }
+        li a:visited{
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegar com página local no iframe</h1>
+    <ul>
+        <li><a href="pagina-extra/pagina01.html" target="frame">First Page</a></li>
+        <li><a href="pagina-extra/pagina02.html" target="frame">Second Page</a></li>
+        <li><a href="pagina-extra/pagina03.html" target="frame">Third Page</a></li>
+    </ul>
+<img src="" alt="">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae sunt quia possimus enim incidunt fuga quasi reprehenderit facilis voluptatibus, unde minima labore nam vero illo recusandae, ullam magnam? Dicta, possimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum perspiciatis fuga rerum minima placeat consequatur sequi vitae temporibus totam, optio molestiae, ipsum odit beatae sint! Excepturi pariatur illum earum repellendus?</p>
+
+    <!---Carregamento de conteúdo do iframe por código usamos o paramento srcdoc-->
+    <iframe name="frame"  srcdoc="<h1> The technogy change my life, I am so happy because now I make many things in HTML and CSS</h1> <img src='favicon.png' alt= 'My logo'>"></iframe>
+</body>
+</html>
