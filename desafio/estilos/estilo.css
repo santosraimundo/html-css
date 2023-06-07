@@ -31,10 +31,28 @@ main{
     
     background: url(../imagens/frame-iphone.png) no-repeat;
 }
+/*Set the home screen*/
 iframe#tela{
     position: relative;
     top: 80px;
     left: 22px;
     width: 269px;
     height: 471px;
+}
+section#rede-sociais{
+    text-align: right;
+    padding-right: 10px;
+    
+}
+section#rede-sociais img{
+    border-radius: 50%;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px 2px black;
+    box-sizing: border-box;
+}
+section#rede-sociais img:hover{
+    border: 2px solid white;
+    transform: translate(-5px, -5px);
+    transition: transform 1s, border 1s;
 }
