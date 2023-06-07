@@ -28,7 +28,6 @@ main{
     transform: translate(-50% ,-50%);
     height: 627px;
     width: 311px;
-    
     background: url(../imagens/frame-iphone.png) no-repeat;
 }
 /*Set the home screen*/
@@ -42,6 +41,7 @@ iframe#tela{
 section#rede-sociais{
     text-align: right;
     padding-right: 10px;
+    padding-top: 20px;
     
 }
 section#rede-sociais img{
