@@ -23,16 +23,22 @@
             font-size: 1.5em;
         }
         form h1{
-            padding-top: 15px;
+            background-color:#060680;
+            color: white;
+            width: 500px;
+            margin: 0px;
+            padding-top: 10px;
         }
         form{
             margin: 20px;
             background-color: white;
             width: 500px;
             height: 300px;
-            border-radius: 5px 10px;
             margin: auto;
             box-shadow: 2px 6px 5px 0px #000000a8;
+            border: 2px solid #060680;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
         }
         .input{
             border-radius: 10px;
@@ -65,7 +71,7 @@
             padding-left: 86%;
             margin-left: 5px;
             margin-right:5px;
-            margin-top: 70px;
+            margin-top: 85px;
         }
         #send input:hover{
             background-color: #04045f;
@@ -80,11 +86,11 @@
         <h1>Cadastramento de usuário</h1>
         <div id="name" class="input">
             <label for="iname">Name:</label>
-            <input type="text" name="name" id="iname" placeholder="Write your name">
+            <input type="text" name="name" id="iname" placeholder="write your name">
         </div>
         <div id="lastname" class="input">
-            <label for="ilastname">Last Name:</label>
-            <input type="text" name="last-name" id="ilastname" placeholder="Write your last name">
+            <label for="ilast-name">Last Name:</label>
+            <input type="text" name="last-name" id="ilast-name" placeholder="write your last name">
         </div>
         <div id="send">
             <input type="submit" value="Send">
