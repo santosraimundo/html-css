@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: cadetblue;
+        }
+        h1{
+            margin: 15px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        form{
+            margin: 20px;
+        }
+        .input{
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #name{
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: #060680;
+        }
+        #lastname{
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: #060680;
+        }
+        #send input{
+            font-size: 1.4em;
+            font-weight: bolder;
+            color: #060680;
+            border-radius: 8px;
+            background-color: darkgoldenrod;
+            padding: 5px;
+            border: 1px solid black;
+            
+        }
+        #send input:hover{
+            background-color: #04045f;
+            color: white;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form >
+        <div id="name" class="input">
+            <label for="iname">Name:</label>
+            <input type="text" name="name" id="iname">
+        </div>
+        <div id="lastname" class="input">
+            <label for="ilastname">Lastname:</label>
+            <input type="text" name="lastname" id="ilastname">
+        </div>
+        <div id="send">
+            <input type="submit" value="Send">
+        </div>
+    </form>
+    
+</body>
+</html>
