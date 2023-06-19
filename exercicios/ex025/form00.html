@@ -19,7 +19,11 @@
         h1{
             margin: 20px;
             text-align: center;
-            text-transform: capitalize;
+            text-transform: uppercase;
+            font-size: 1.5em;
+        }
+        form h1{
+            padding-top: 15px;
         }
         form{
             margin: 20px;
@@ -34,6 +38,7 @@
             border-radius: 10px;
             padding: 5px;
             text-align: center;
+            box-sizing: content-box;
         }
         #name{
             margin: 15px;
@@ -56,9 +61,11 @@
             background-color: darkgoldenrod;
             padding: 5px;
             border: 1px solid black;
-            margin: 15px;
             text-align: center;
-            
+            padding-left: 86%;
+            margin-left: 5px;
+            margin-right:5px;
+            margin-top: 70px;
         }
         #send input:hover{
             background-color: #04045f;
@@ -73,11 +80,11 @@
         <h1>Cadastramento de usuário</h1>
         <div id="name" class="input">
             <label for="iname">Name:</label>
-            <input type="text" name="name" id="iname">
+            <input type="text" name="name" id="iname" placeholder="Write your name">
         </div>
         <div id="lastname" class="input">
-            <label for="ilastname">Lastname:</label>
-            <input type="text" name="lastname" id="ilastname">
+            <label for="ilastname">Last Name:</label>
+            <input type="text" name="last-name" id="ilastname" placeholder="Write your last name">
         </div>
         <div id="send">
             <input type="submit" value="Send">
