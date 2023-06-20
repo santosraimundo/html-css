@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usando Caixa de Senha</title>
+    <link rel="stylesheet" href="pass.css">
 </head>
 <body>
-    <h1>Form for Password</h1>
+    <main>
+        <h1>Form for Password</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <h1>User Password</h1>
+            <div>
+                <label for="iusername">Username:</label>
+                <input type="text" name="username" id="iusername" required minlength="6" maxlength="25" size="25" autocomplete="username" placeholder="write your username here">
+            </div>
+            <div>
+                <label for="ipassword">Password:</label>
+                <input type="password" name="password" id="ipassword" required minlength="9" maxlength="30" size="25" autocomplete="current-password" placeholder="write your password here">
+            </div>
+            <div id="btn">
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </main>
 </body>
 </html>
