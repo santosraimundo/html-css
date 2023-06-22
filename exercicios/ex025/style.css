@@ -53,21 +53,21 @@ form{
     font-weight: bolder;
     color: #060680;
 }
-#send input{
-    font-size: 1.4em;
-    font-weight: bolder;
-    color: #060680;
-    border-radius: 8px;
-    background-color: darkgoldenrod;
-    padding: 5px;
-    border: 1px solid black;
-    padding-left: 86%;
-    margin-left: 5px;
-    margin-right:5px;
-    margin-top: 85px;
-   
-}
+
 #send input:hover{
     background-color: #04045f;
     color: white;
+}
+input[type=submit]{
+    width: 100%;
+    margin: 8px 0px;
+    border: none;
+    font-weight: bolder;
+    background-color: darkgoldenrod;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 1.4em;
+    font-weight: bold;
+    box-shadow: 1px 1px #0000009d;
+    cursor: pointer;
 }
