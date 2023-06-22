@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Form Element </title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #808080c9;
+        }
+        select{
+            margin: 10px;
+        }
+        label{
+            margin: 10px;
+            font-weight: bold;
+        }
+        h1{
+            margin: 10px;
+            text-align: center;
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>The Select Element</h1>
+    <main>
+        <form action="cadastro.php" method="get" target="_blank">
+            <label for="icurso">Choose your favorite courses</label>
+            <select name="course" id="icurso">
+                <option value="javascript" selected>JavaScrip</option>
+                <option value="html">HTML5</option>
+                <option value="css">CSS3</option>
+                <option value="php">PHP</option>
+                <option value="c#">C#</option>
+                <option value="mysql">Mysql</option>
+                <option value="redes">Redes de Computador</option>
+            </select>
+            <input type="submit" value="Send">
+            
+
+        </form>
+    </main>
+
+
+</body>
+</html>

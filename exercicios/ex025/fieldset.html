@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset Form Element </title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: #000000bb;
+        }
+        fieldset{
+            background-color: #0b0b38;
+            color: white;
+            border:2px solid #966304;
+            height: 200px;
+        }
+        legend{
+            color: white;
+            font-size: 1.5em;
+            
+        }
+        input[type=submit]{
+            margin-left: 10px;
+            background-color: #966304;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on" target="_blank">
+        <fieldset>
+            <legend>Cadastra a sua viatura</legend>
+            <label for="imarca">Marca da Viatura:</label><br>
+            <input type="text" name="marca" id="imarca" required autocomplete="given-name" placeholder="digite a marca viatura" maxlength="20"><br>
+            <label for="icor">Cor da Viatura</label><br>
+            <input type="text" name="cor" id="icor" autocomplete="given-name" required maxlength="15" placeholder="digite a cor da viatura">
+            <input type="submit" value="Cadastrar">
+        </fieldset>
+        
+    </form>
+</body>
+</html>
