@@ -15,6 +15,8 @@
             color: white;
             border:2px solid #966304;
             height: 200px;
+            width: 400px;
+            margin: auto;
         }
         legend{
             color: white;
@@ -27,10 +29,15 @@
             padding: 5px;
             border-radius: 5px;
         }
+        h1{
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="get" autocomplete="on" target="_blank">
+    <h1>Examples with Feldset</h1>
+    <form action="cadastro.php" method="post" autocomplete="on" target="_blank">
         <fieldset>
             <legend>Cadastra a sua viatura</legend>
             <label for="imarca">Marca da Viatura:</label><br>
