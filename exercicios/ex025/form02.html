@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        div{
+            margin: 15px;
+            padding: 5px;
+        }
+        h1{
+            margin: 10px;
+            text-align: center;
+        }
+        input[type=text]{
+            width: 300px;
+            height: 30px;
+            margin: 10px 5px;
+            outline: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        input[type=submit]{
+            width: 100%;
+            outline: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+            margin: 10px 5px;
+            padding: 10px 4px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type=reset]{
+            width: 100%;
+            outline: none;
+            margin-bottom: 10px;
+            font-weight: bold;
+            margin: 10px 5px;
+            padding: 10px 4px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type=number]{
+            width: 200px;
+            height: 30px;
+            border-radius: 4px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Use the elements Number, Month, Date and Time</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" target="_blank" >
+        <div>
+            <label for="fname">Full Name:</label>
+            <input type="text" name="full-name" id="fname" required placeholder="write your full name" autocomplete="name">
+        </div>
+        <div>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" min="0" max="20" autocomplete="cc-number" step="0.1" placeholder="0 à 20" required>
+        </div>
+        <div>
+            <label for="imonth">Mês Lectivo:</label>
+            <input type="month" name="month" id="imonth">
+        </div>
+        <div>
+            <label for="idlocal">Data Actual:</label>
+            <input type="datetime-local" name="date-local" id="idlocal">
+        </div>
+        <div>
+            <label for="idate">Data Lectivo</label>
+            <input type="date" name="date" id="idate">
+        </div>
+        <div>
+            <label for="idate-time">Data Ponctual</label>
+            <input type="datetime" name="date-time" id="idate-time" autocomplete="bday-year">
+        </div>
+        <div>
+            <label for="itime">Hora do Dia</label>
+            <input type="time" name="time" id="itime">
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </div>
+
+
+    </form>
+</body>
+</html>
