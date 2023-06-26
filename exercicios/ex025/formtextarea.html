@@ -10,8 +10,8 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
         textarea{
-            width: 500px;
-            height: 400px;
+            width: 150px;
+            height: 100px;
             padding: 10px;
             font-size: 1.3em;
             border: 2px solid;
@@ -22,10 +22,10 @@
 <body>
     <h1>Textarea examples</h1>
     <main>
-        <form action="cadastro.php">
+        <form action="cadastro.php" method="post" target="_blank">
             <textarea name="rutine" id="irutine" cols="30" rows="10">
-                Hello, my name is Santos Iam new dev.
-            </textarea>
+            </textarea><br>
+            <input type="submit" value="Send">
         </form>
         
     </main>

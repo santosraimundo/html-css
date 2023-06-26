@@ -34,13 +34,19 @@
         <form action="cadastro.php" method="get" target="_blank">
             <label for="icurso">Choose your favorite courses</label>
             <select name="course" id="icurso">
-                <option value="javascript" selected>JavaScrip</option>
-                <option value="html">HTML5</option>
-                <option value="css">CSS3</option>
-                <option value="php">PHP</option>
-                <option value="c-sharp">C-Sharp</option>
-                <option value="mysql">Mysql</option>
-                <option value="redes">Redes de Computador</option>
+                <optgroup label="Curso para Front-End">
+                    <option value="javascript" selected>JavaScrip</option>
+                    <option value="html">HTML5</option>
+                    <option value="css">CSS3</option>
+                </optgroup>
+                <optgroup label="Curso para Back-End">
+                    <option value="php">PHP</option>
+                    <option value="c-sharp">C-Sharp</option>
+                    <option value="mysql">Mysql</option>
+                </optgroup>
+                <optgroup label="Curso para Redes de Computador">
+                    <option value="redes">Redes de Computador</option>
+                </optgroup>
             </select>
             <input type="submit" value="Send">
             
