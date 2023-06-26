@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <h1>How we use the datalist element</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" target="_blank">
+        <label for="ilist">Choose your favorite web browser:</label>
+        <input type="text" name="browser" id="ilist" list="fav-browser">
+        <datalist id="fav-browser">
+                    <option>Chrome</option>
+                    <option>Opera</option>
+                    <option>Safari</option>
+                    <option>Edge</option>
+                    <option>Duck-DuckGO</option>
+                    <option>Firefox</option>
+        </datalist>
+        <input type="submit" value="Send">
+
+    </form>
+</body>
+</html>
