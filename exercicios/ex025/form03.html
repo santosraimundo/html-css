@@ -38,6 +38,7 @@
         label{
             font-size: 1.5em;
             font-weight: bold;
+            color: white;
         }
         input[type=submit]{
             width: 100px;
@@ -73,6 +74,9 @@
             background-color: #085555;
             border: none;
             border-radius: 5px;
+            width: 300px;
+            margin: auto;
+            box-shadow: 3px 2px 5px 2px #000000a2;
         }
 
 
@@ -80,7 +84,7 @@
 </head>
 <body>
     <h1>Element email e phone</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <fieldset>
             <div>
                 <label for="first-name">First Name:</label><br>
@@ -96,7 +100,7 @@
             </div>
             <div>
                 <label for="iphone">Phone Number:</label><br>
-                <input type="tel" name="phone" id="iphone" placeholder="(xxx)-(xx)(xx)(xx)" required pattern="^[0-9]$" autocomplete="tel" minlength="0" maxlength="9">
+                <input type="tel" name="phone" id="iphone" placeholder="(xxx)-(xx)-(xx)-(xx)" required pattern="\d{3}\d{2}\d{2}\d{2}" autocomplete="tel" minlength="0" maxlength="9">
             </div>
             <div>
                 <input type="submit" value="Send">
