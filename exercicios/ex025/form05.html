@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Color Range and File</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        body{
+            background-color:#f0f8ff;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <div>
+            <label for="icolor">Choose your favorite color:</label>
+            <input type="color" name="color" id="icolor">
+        </div>
+        <div>
+            <label for="inivel">Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="10" value="5">
+        </div>
+        <div>
+            <label for="ifile">Choose your file:</label>
+            <input type="file" name="file" id="ifile">
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
