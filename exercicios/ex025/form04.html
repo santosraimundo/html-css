@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox and Radio Button</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <!--Using Checkbox Element-->
+        <fieldset>
+            <legend>Choose you favorite Phones</legend>
+            <optgroup label="Linha de Iphone:"></optgroup>
+            <input type="checkbox" name="iphone11" id="phone11">
+            <label for="phone11">Iphone 11 Mini</label><br>
+            <input type="checkbox" name="iphone-pro" id="iphone11pro">
+            <label for="iphone11pro">Iphone 11 Pro</label><br>
+            <input type="checkbox" name="iphone-promax" id="iphone11promax">
+            <label for="iphone11promax">Iphone 11 ProMax</label><br>
+            <input type="checkbox" name="iphone12" id="phone12">
+            <label for="phone12">Iphone 12 Mini</label><br>
+            <input type="checkbox" name="iphone12pro" id="iphone12-pro">
+            <label for="iphone12-pro">Iphone 12 Pro</label><br>
+            <input type="checkbox" name="iphone12max" id="iphone12promax" checked>
+            <label for="iphone12promax">Iphone 12 ProMax</label>
+            <optgroup label="Linha S da Samsung"></optgroup>
+            <input type="checkbox" name="s22" id="s22">
+            <label for="s22">S22 Mini</label><br>
+            <input type="checkbox" name="s22plus" id="s22plus">
+            <label for="s22plus">S22 Plus</label><br>
+            <input type="checkbox" name="s22ultra" id="s22ultra" checked>
+            <label for="s22ultra">S22 Ultra</label>
+        </fieldset>
+        <fieldset>
+            <!--Using radio button-->
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="smasculino" value="Masculino" checked>
+            <label for="smasculino">Masculino</label><br>
+            <input type="radio" name="sexo" id="sfeminino" value="Femenino">
+            <label for="sfeminino">Femenino</label>
+        </fieldset>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+        
+        
+        
+    </form>
+</body>
+</html>
