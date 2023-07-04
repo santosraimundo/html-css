@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #bdb76b;
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+            color: white;
+            background-color: #4f4103;
+        }
+        div{
+            margin: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        input[type=submit]{
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 4px 5px 10px 10px;
+            border: none;
+            background-color: #4f4103;
+            color: white;
+        }
+        input[type=reset]{
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 4px 5px 10px 10px;
+            border: none;
+            background-color: #4f4103;
+            color: white;
+        }
+        input[type=text]{
+            width: 300px;
+            height: 30px;
+            border: none;
+            background-color: white;
+        }
+        select{
+            width: 400px;
+            height: 30px;
+            background-color: white;
+            text-align: center;
+            border: none;
+            font-size: 1.1em;
+        }
+        select option {
+            background-color: white;
+        }
+        select optgroup{
+            background-color: #4f4103;
+            color: darkgoldenrod;
+        }
+        textarea{
+            resize: none;
+            width: 400px;
+            height: 250px;
+            background-color: white;
+            border: none;
+            border-radius: 20px 5px 20px 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>How to use select, datalist and textarea</h1>
+    <form action="cadastro.php" method="post">
+        <!--Example using select-->
+        <div>
+            <label for="iprovince">Provincia de Angola:</label>
+            <select name="province" id="iprovince" required>
+                <option value="escolha">===Escolha a sua Provincia===</option>
+                <optgroup label="Região Norte">
+                    <option value="ML">Malanje</option>
+                    <option value="LN">Lunda Norte</option>
+                    <option value="CB">Cabinda</option>
+                    <option value="UÍG">Uíge</option>
+                    <option value="ZAIR">Zaíre</option>
+                </optgroup>
+                <optgroup label="Região Sul">
+                    <option value="Nam">Namibe</option>
+                    <option value="Hl">Huíla</option>
+                    <option value="CC">Cuando Cubango</option>
+                    <option value="CN">Cunene</option>
+                </optgroup>
+                <optgroup label="Região Leste">
+                    <option value="MOX">Moxico</option>
+                    <option value="LS">Lunda Sul</option>
+                </optgroup>
+        </select>
+    </div>
+    <div>
+        <!--Example using datalist-->
+        <label for="iprofissao">Profissão:</label>
+        <input type="text" name="profissao" id="iprofissao" list="listprofissao" required>
+        <datalist id="listprofissao">
+                <option value="Dv">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+                <option value="Cont">Contabilista</option>
+                <option value="ADM">Administrador</option>
+                <option value="Mot">Motorista</option>
+        </datalist>
+    </div>
+    <div>
+        <!--Example using textearea-->
+        <label for="msg">Informação Adicionais:</label><br>
+        <textarea name="mensagem" id="msg" cols="30" rows="10"></textarea>
+
+    </div>
+    <div>
+        <input type="submit" value="Send">
+        <input type="reset" value="Clear">
+    </div>
+    </form>
+</body>
+</html>
