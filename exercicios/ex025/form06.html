@@ -55,6 +55,7 @@
         }
         select option {
             background-color: white;
+            text-align: left;
         }
         select optgroup{
             background-color: #4f4103;
@@ -66,7 +67,9 @@
             height: 250px;
             background-color: white;
             border: none;
-            border-radius: 20px 5px 20px 5px;
+            border-radius: 5px;
+            text-indent: 10px;
+            padding-top: 5px;
         }
         
     </style>
@@ -103,7 +106,7 @@
         <label for="iprofissao">Profissão:</label>
         <input type="text" name="profissao" id="iprofissao" list="listprofissao" required>
         <datalist id="listprofissao">
-                <option value="Dv">Desenvolvedor</option>
+                <option value="Dev">Desenvolvedor</option>
                 <option value="Prof">Professor</option>
                 <option value="Cont">Contabilista</option>
                 <option value="ADM">Administrador</option>
