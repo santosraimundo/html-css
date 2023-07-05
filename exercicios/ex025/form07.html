@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Element</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Using the output element</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="ipnumber">Digite o Primeiro Número:</label><br>
+            <input type="number" name="pnumber" id="ipnumber" min="0" max="2000" required oninput="isoma.innerHTML= Number(ipnumber.value) + Number(isnumber.value)">
+        </div>
+        <div>
+            <label for="">Digite o Segundo Número:</label><br>
+            <input type="number" name="snumber" id="isnumber" min="0" max="2000" required oninput="isoma.innerHTML= Number(ipnumber.value) + Number(isnumber.value)">
+        </div>
+        <div>
+            <label for="isoma">Soma =</label>
+            <output name="soma" id="isoma">0</output>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>

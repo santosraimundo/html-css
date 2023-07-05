@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output Element</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <style>
+        div{
+            margin: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>More example how we can use the output element</h1>
+    <form action="cadastro.php" method="get">
+        <div>
+            <label for="inivel">Qual é o nível do seu range:</label>
+            <input type="range" name="nivel" id="inivel" min="0" max="50" oninput="aval.innerHTML= Number(inivel.value)">
+            <output id="aval">5%</output>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </div>
+    </form>
+</body>
+</html>
