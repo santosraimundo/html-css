@@ -13,17 +13,25 @@
     </style>
 </head>
 <body>
-    <h1>More example how we can use the output element</h1>
+    <h1>Exercise Three</h1>
     <form action="cadastro.php" method="get">
         <div>
-            <label for="inivel">Qual é o nível do seu range:</label>
-            <input type="range" name="nivel" id="inivel" min="0" max="50" oninput="aval.innerHTML= Number(inivel.value)">
-            <output id="aval">5</output>
+            <label for="iano">Qual é o ano que nasceu?</label>
+            <input type="number" name="anonascimento" id="iano" required min="1800" max="2023" oninput="CalcIdade()">
+        </div>
+        <div>
+            <label for="idade">A sua idade é:</label>
+            <output id="idade"></output>
         </div>
         <div>
             <input type="submit" value="Send">
             <input type="reset" value="Clear">
         </div>
     </form>
-</body>
+    <script>
+        function CalcIdade(){
+            let AnoActual = new Date().getFullYear()
+            idade.innerHTML= Number(AnoActual) - Number(iano.value)
+        }
+    </script>
 </html>
