@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*Media Query para tela*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100hw;
+}
+
+header{
+    background-color: #8f8787fa;
+
+
+}
+header >h1{
+    text-align: center;
+    padding-top: 5px;
+}
+menu ul{
+    background-color: #645e5e;
+    list-style-type: none;
+}
+
+menu  li{
+    display: inline-block;
+    padding: 10px;
+    background-color: #2b2727;
+    color: white;
+}
+    
+article{
+    padding-top: 40px;
+    
+}
+article{
+    display: block;
+    width: 500px;
+    margin: auto;
+}
