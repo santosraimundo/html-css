@@ -5,7 +5,7 @@
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-body{
+HTML,body{
     background-color: #233eff;
     background-size: contain;
     background-repeat: no-repeat;

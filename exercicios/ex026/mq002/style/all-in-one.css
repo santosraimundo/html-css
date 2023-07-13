@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/*Set my media query all*/
+@media all{
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body{
+        background-color: black;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+        height: 100vh;
+        
+    }
+    h1{
+        color: white;
+        padding: 12px;
+        border: 2px solid white;
+        border-radius: 5px 10px;
+        margin: 10px;
+    }
+
+}
+
+/*Set my midea query for print*/
+@media print{
+    body{
+        background-color: white;
+        width: 100vw;
+    }
+    header > h1{
+        color: black;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    header::after{
+        content: 'Este site foi feito pelo DEV Santos Raimundo.';
+        text-decoration: overline;
+    }
+}
+/*Set media query for portrait screen*/
+@media screen and (orientation:portrait){
+    body{
+        background-image: url(../image/portrait.jpg);
+        background-position: center bottom;
+    }
+    header h1{
+        color:#f3f30c;
+        border: 2px solid white;
+        background-color: #04046b;
+
+    }
+}
+/*Set media query for landscape*/
+@media screen and (orientation:landscape){
+    body{
+        background-image: url(../image/lanscape.jpg);
+        background-position: center bottom;
+    }
+    header h1{
+        display: none;
+    }
+}
