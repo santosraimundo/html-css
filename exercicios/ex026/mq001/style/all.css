@@ -1,1 +1,19 @@
 /*Configuração geral para toda Media*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+h1,h2{
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 1px 1px 1px #051588;
+}
