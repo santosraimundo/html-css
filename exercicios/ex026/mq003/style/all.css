@@ -2,3 +2,127 @@
 
 /*Set for all devices*/
 
+
+@charset "UTF-8";
+
+/*Set media for print, tablet, desktop and tv*/
+
+/*For Print*/
+@media print{ 
+    body{
+        background-image: url(../imagem/back-print.jpg);
+        
+
+    }
+    main{
+        border: 2px solid black;
+        width: 99vw;
+        box-shadow: 2px 2px 5px 0px #0000008f;
+    }
+    main h1{
+        color: black;
+        font-size: 2.2em;
+        padding-top: 10px;
+    }
+    main::after{
+        content: 'Esta versão foi impresso apartir do site da PhiHope Technology. DEV Santos Raimundo';
+        text-decoration: overline;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: block;
+    }
+    #desktop{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+
+}
+/*For Tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+    body{
+        background-image: url(../imagem/back-tablet.jpg);
+    }
+    main h1{
+        color: #090968;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: block;
+    }
+    #print{
+        display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #tv{
+        display: none;
+    }
+    
+}
+/*For Desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagem/back-pc.jpg);
+    }
+    main{
+        width: 90vw;
+    }
+    main h1{
+        color: #5f0303;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #desktop{
+        display: block;
+    }
+    #tv{
+        display: none;
+    }
+    
+}
+/*For TV*/
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(../imagem/back-tv.jpg);
+    }
+    main{
+        width: 96vw;
+    }
+    main h1{
+        color:black;
+    }
+    #phone{
+        display: none;
+    }
+    #tablet{
+        display: none;
+    }
+    #print{
+        display: none;
+    }
+    #desktop{
+        display: none;
+    }
+    #tv{
+        display: block;
+    }
+    
+}
