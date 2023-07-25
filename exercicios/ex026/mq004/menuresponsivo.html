@@ -7,8 +7,9 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/midea-query.css">
 </head>
-<body>
+<body onresize="changeSize()">
  
     <header>
         
@@ -40,6 +41,15 @@
             else{
                 menu.style.display='block';
             }
+        }
+        function changeSize() {
+            if(window.innerWidth >= 768){
+                menu.style.display = "block";
+
+            }else{
+                menu.style.display = "none";
+            }
+            
         }
     </script>
 </html>
