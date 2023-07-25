@@ -17,3 +17,27 @@
         width: 768px;
     }
 }
+@media print{
+    span#burguer{
+        display: none;
+    }
+    menu#menu > ul > li{
+        display: none;
+    }
+    main{
+        width: 90vw;
+        box-shadow: none;
+    }
+    header h1{
+        color: black;
+        text-transform: uppercase;
+    }
+    main article > h2{
+        color: black;
+        text-transform: uppercase;
+    }
+    main::after{
+        content:'Este arquivo foi imprensso no site do DEV SANTOS RAIMUNDO.';
+        text-decoration: overline;
+    }
+}
