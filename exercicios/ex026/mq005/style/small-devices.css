@@ -2,3 +2,43 @@
 
 /*Screen for small devices*/
 /*Color to use #49a09d, #5f2c82*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100vh;
+    width: 100vw;
+    background-color:#5f2c82 ;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #0000008f;
+}
+section#login > div#image{
+    background: #5f2c82 url(../image/bank-usa.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    display: block;
+}
+section#login > div#form{
+    display: block;
+    padding: 10px;
+}
