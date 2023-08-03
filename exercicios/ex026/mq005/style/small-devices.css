@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 /*Screen for small devices*/
+
 /*Color to use #49a09d, #5f2c82*/
 
 *{
@@ -23,15 +24,15 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    height: 500px;
+    height: 530px;
     width: 250px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px #0000008f;
     transition: width 1s, height 1s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 section#login > div#image{
     background: #5f2c82 url(../image/bank-usa.jpg) no-repeat;
@@ -43,4 +44,66 @@ section#login > div#image{
 section#login > div#form{
     display: block;
     padding: 10px;
+}
+/* Stylize my form*/
+form > div.field{
+    background-color: #5f2c82;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin: 5px 0px;
+}
+form > div.field > input{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+
+}
+form >div.field >span{
+    background-color: white;
+    width: 40px;
+    padding: 8px;
+    font-size: 1.9em;
+}
+form > div> label{
+    display: none;
+}
+form > input[type="submit"]{
+    display: block;
+    margin: auto;
+    background-color:  #49a09d ;
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+form > input[type="submit"]:hover{
+    background-color:  #1c4241 ;
+}
+form > #button{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid  #49a09d;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1em;
+    margin: 5px 0px;
+    padding-top: 5px;
+    
+}
+form > #button >span{
+    font-size: 0.8em;
+}
+form > #button:hover{
+    background-color: #1c4241;
+    color: white;
+    font-weight: bold;
+    
 }

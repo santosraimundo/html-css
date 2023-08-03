@@ -12,26 +12,25 @@
     <main>
         <section id="login">
             <div id="image">
-        
-
+                <!--Here we have image.-->
             </div>
             <div id="form">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça o seu login para acessar a sua conta e poder as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" autocomplete="on">
-                    <div id="email">
+                    <div id="email" class="field">
                         <span class="material-icons">person</span>
                         <input type="email" name="email" id="log-emai" placeholder="Enter your email" required autocomplete="email" maxlength="40">
                         <label for="log-email">Login</label>
                     </div>
                     
-                    <div id="password">
+                    <div id="password" class="field">
                         <span class="material-icons">key</span>
                         <input type="password" name="pass" id="log-password" placeholder="Enter your password" required autocomplete="current-password" minlength="8" maxlength="30">
                         <label for="log-password">Senha</label>
                     </div>
                     <input type="submit" value="Enter">
-                    <a href="">Esqueceu senha <span class="material-icons">email</span></a>
+                    <a href="#" id="button">Esqueceu senha <span class="material-icons">email</span></a>
                 </form>
 
             </div>
