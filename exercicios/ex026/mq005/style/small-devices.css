@@ -66,6 +66,7 @@ form >div.field >span{
     width: 40px;
     padding: 8px;
     font-size: 1.9em;
+    color: white;
 }
 form > div> label{
     display: none;
