@@ -48,24 +48,29 @@ section#login > div#form{
 /* Stylize my form*/
 form > div.field{
     background-color: #5f2c82;
-    border-radius: 5px;
-    height: 40px;
+    border-radius: 8px;
+    border: 2px solid #5f2c82 ;
+    height: 49px;
     width: 100%;
     margin: 5px 0px;
+    display: block;
 }
 form > div.field > input{
     width: 80%;
-    height: 35px;
-    border-radius: 5px;
+    height: 40px;
+    border-radius: 8px;
     border: none;
-    transform: translate(-0px, -13px);
-
+    padding: 4px;
+    background-color: #49a09d;
+    transform: translate(-0px, -10px);
+}
+form > div.field > input:focus-within{
+    background-color: white;
 }
 form >div.field >span{
-    
     width: 40px;
-    padding: 8px;
-    font-size: 1.9em;
+    padding: 5px;
+    font-size: 2em;
     color: white;
 }
 form > div> label{
@@ -99,6 +104,8 @@ form > #button{
     font-size: 1em;
     margin: 5px 0px;
     padding-top: 5px;
+    color: #49a09d;
+    font-weight: bold;
     
 }
 form > #button >span{

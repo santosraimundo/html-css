@@ -10,6 +10,10 @@
     }
     section#login{
         width: 80vw;
+        height: 310px;
+    }
+    form > div.field > input{
+        width: 89%;
     }
     section#login > div#image{
         float: left;
@@ -29,6 +33,7 @@
     }
     section#login{
         width: 950px;
+        height: 310px;
     }
     section#login > div#image{
         float: right;
@@ -38,5 +43,8 @@
     section#login > div#form{
         float: left;
         width: 50%;
+    }
+    form > div.field > input{
+        width: 89.5%;
     }
 }
