@@ -4,22 +4,18 @@ body{
 }
 div#container{
     background-color: #323131;
-    height: 800px;
+    height: 500px;
     padding-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    
     /*
     flex-direction: column;
     
     align-items:center;
     justify-content:center;
     flex-flow: column wrap; flex-wrap: wrap; Esta propriedade serve para agrupar e direcionar o item*/
-    
-    
-    
 }
 .items{
     margin: 5px;
@@ -29,4 +25,34 @@ div#container{
     height: 50px;
     font-size: 20px;
     text-align: center;
+}
+div#child-element{
+    background-color: #121275;
+    margin-top: 20px;
+    display: flex;
+    height: 500px;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+}
+section.child{
+    padding: 20px;
+    margin: 5px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    background-color: white;
+    flex-basis: 100px;
+    flex-shrink: 2;
+   
+}
+section#child0{
+   flex-grow: 1;
+   order: 1;
+   
+   
+}
+section#child1{
+    flex-grow: 1;
+    order: 0;
 }
