@@ -46,14 +46,4 @@ section.child{
     flex:30%;
     align-self: center;
 }
-section#child0{
-   flex-grow: 0;
-   
-   
-   
-}
-section#child1{
-    flex-grow: 0;
-    
-    align-self:center ;
-}
+
