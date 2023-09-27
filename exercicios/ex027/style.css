@@ -29,30 +29,31 @@ div#container{
 div#child-element{
     background-color: #121275;
     margin-top: 20px;
-    display: flex;
     height: 500px;
+    display: flex;
     flex-flow: row wrap;
     align-items: center;
     align-content: center;
+    
 }
+/* configurando flex child*/
 section.child{
     padding: 20px;
     margin: 5px;
-    width: 50px;
-    height: 30px;
+    height: 50px;
     text-align: center;
     background-color: white;
-    flex-basis: 100px;
-    flex-shrink: 2;
-   
+    flex:30%;
+    align-self: center;
 }
 section#child0{
-   flex-grow: 1;
-   order: 1;
+   flex-grow: 0;
+   
    
    
 }
 section#child1{
-    flex-grow: 1;
-    order: 0;
+    flex-grow: 0;
+    
+    align-self:center ;
 }
