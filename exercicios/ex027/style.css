@@ -36,6 +36,7 @@ div#child-element{
     align-content: center;
     
 }
+
 /* configurando flex child*/
 section.child{
     padding: 20px;
@@ -45,5 +46,9 @@ section.child{
     background-color: white;
     flex:30%;
     align-self: center;
+}
+section.child:hover{
+    background-color: darkgoldenrod;
+    cursor: pointer;
 }
 
