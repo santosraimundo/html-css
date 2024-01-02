@@ -1,1 +1,27 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #000000d2;
+    padding: 20px;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 10px;
+    grid-template-rows: 30% 30%;
+    height: 700px;
+    justify-content: center;
+    margin: 10px;
+}
+.container > div{
+    background-color: green;
+    border: 1px solid white;
+}
+h1{
+    padding: 20px;
+    text-align: center;
+}
