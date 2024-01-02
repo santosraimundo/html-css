@@ -11,12 +11,12 @@
     border: 3px solid white;
     padding: 10px;
     display: grid;
-    grid-template-areas:'header header header header',
+    grid-template-areas:'header header header ',
     'aside section section'
     'article article'
-     'footer footer footer';
-     height: 60vh;
-    gap: 6px;
+     'footer footer';
+    
+    gap: 5px;
 }
 .child{
     background-color: white;
