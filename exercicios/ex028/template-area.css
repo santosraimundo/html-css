@@ -15,7 +15,7 @@
     'aside section section'
     'article article'
      'footer footer footer ';
-     height: 100vh;
+     
     gap: 5px;
 }
 .child{
