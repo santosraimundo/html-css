@@ -2,7 +2,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: 0px;
+    box-sizing: border-box;
     background-color: #000000cf;
 }
 
@@ -12,9 +12,9 @@
     padding: 10px;
     display: grid;
     gap: 5px;
-    grid-template-areas:'header header header '
-    'aside section section'
-    'article article'
+    grid-template-areas:'header header header header'
+    'aside aside '
+    'article article arcticle'
      'footer footer footer ';
      
    
