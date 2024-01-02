@@ -11,12 +11,13 @@
     border: 3px solid white;
     padding: 10px;
     display: grid;
+    gap: 5px;
     grid-template-areas:'header header header '
     'aside section section'
     'article article'
      'footer footer footer ';
      
-    gap: 5px;
+   
 }
 .child{
     background-color: white;
