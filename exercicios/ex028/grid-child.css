@@ -1,0 +1,17 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main#container{
+    background-color: aquamarine;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 2px;
+}
+div{
+    background-color: black;
+    border: 2px solid red;
+}
