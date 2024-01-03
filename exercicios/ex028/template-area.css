@@ -17,6 +17,7 @@
     'section section aside'
     'article article aside'
      'footer footer footer';
+     gap: 4px 0px;
 }
 header > h1{
     background-color: white;
