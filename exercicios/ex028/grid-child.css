@@ -12,7 +12,7 @@ main#container{
     grid-template-columns: 20%  20%  20%  20%;
     grid-template-rows: 100px 100px 100px;
     gap: 10px 15px;
-    justify-content: center;
+    justify-content: space-around;
     
     
 
@@ -25,4 +25,10 @@ main > div{
 div#one{
     grid-row: 1/2;
     grid-column: 1/5;
+    background-color: blue;
 }
+div#two{
+    grid-row: 2/4;
+    grid-column: 1/4;
+}
+div
