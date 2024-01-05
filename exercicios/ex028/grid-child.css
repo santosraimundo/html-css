@@ -37,3 +37,16 @@ div#three{
 div#four{
     grid-column: 1/5;
 }
+/*Midea query*/
+@media screen and (min-width: 768px) {
+    main>div{
+        background-color: green;
+    }
+    div#one:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+    div#three:hover{
+        cursor: pointer;
+    }
+}
