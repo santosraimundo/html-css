@@ -11,9 +11,10 @@ main#container{
     display: grid;
     padding: 15px;
     grid-template-columns: 20%  20%  20%  20%;
-    align-items: center;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px 15px;
     justify-content: center;
-    gap: 0px 15px;
+    
     
 
    
@@ -24,6 +25,9 @@ main > div{
     color: yellow;
 }
 div#one{
+   
+    grid-row: 1/4;
+    grid-column: 1/5;
     
     
 }
