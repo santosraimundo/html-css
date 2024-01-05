@@ -11,7 +11,9 @@ main#container{
     display: grid;
     padding: 15px;
     grid-template-columns: 20%  20%  20%  20%;
-    gap: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 0px 15px;
     
 
    
@@ -21,7 +23,7 @@ main > div{
     border: 2px solid red;
     color: yellow;
 }
-div#1{
-    grid-row: ;
+div#one{
+    
     
 }
