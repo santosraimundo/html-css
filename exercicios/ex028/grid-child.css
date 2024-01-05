@@ -39,6 +39,9 @@ div#four{
 }
 /*Midea query*/
 @media screen and (min-width: 768px) {
+    main#container{
+        justify-content: space-between;
+    }
     main>div{
         background-color: green;
     }
@@ -48,5 +51,10 @@ div#four{
     }
     div#three:hover{
         cursor: pointer;
+        background-color: gray;
+    }
+    div#four:hover{
+        cursor: pointer;
+        background-color:#045d5d;
     }
 }
