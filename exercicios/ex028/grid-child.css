@@ -9,9 +9,19 @@ main#container{
     width: 100vw;
     height: 100vh;
     display: grid;
+    padding: 15px;
+    grid-template-columns: 20%  20%  20%  20%;
+    gap: 10px 20px;
+    justify-content: space-evenly;
+
    
 }
 main > div{
     background-color: black;
     border: 2px solid red;
+    color: yellow;
+}
+div#1{
+    align-self: flex-start;
+    
 }
