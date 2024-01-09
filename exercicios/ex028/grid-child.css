@@ -46,6 +46,21 @@ div#four{
     main>div{
         background-color: green;
     }
+    div#two{
+        grid-row: 2/4;
+        grid-column: 1/3;
+    }
+    div#three{
+        grid-row: 2/4;
+        grid-column: 3/5;
+    }
+    div#five{
+        grid-column: 1/5;
+    }
+    div#six{
+        grid-column: 1/3
+        ;
+    }
     div#one:hover{
         background-color: red;
         cursor: pointer;
