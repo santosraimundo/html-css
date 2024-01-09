@@ -41,7 +41,7 @@ div#four{
 @media screen and (min-width: 768px) {
     main#container{
         justify-content: space-between;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4,500px);
     }
     main>div{
         background-color: green;
