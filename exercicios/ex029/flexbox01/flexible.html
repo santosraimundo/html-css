@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direções no Eixo com Flexible Box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .father{
+            display: flex;
+            background-color: #0d0dbe;
+            flex-direction: column;
+            
+        }
+        .children{
+            background-color: goldenrod;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+            font-weight:bold;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <!--Put flexible box in our page-->
+    <div class="father">
+        <div class="children">HTML5</div>
+        <div class="children">CSS3</div>
+        <div class="children">JAVASCRIPT</div>
+        <div class="children">BOOTSTRAP5</div>
+        <div class="children">REACTJS</div>
+    </div>
+</body>
+</html>
