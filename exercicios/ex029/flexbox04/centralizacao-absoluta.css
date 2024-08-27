@@ -24,6 +24,12 @@ section{
     background-color: white;
     width: 450px;
     height: 450px;
+    
+    border-top-right-radius:30px ;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px 1px 2px #00000089
 }
 h1{
     text-align: center;
