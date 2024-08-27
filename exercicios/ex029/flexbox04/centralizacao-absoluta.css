@@ -15,6 +15,10 @@ main{
     background-color: #e0a309;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
 }
 section{
     background-color: white;
