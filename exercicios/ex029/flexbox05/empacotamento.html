@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de elementos com empacotamento</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html, body{
+            width: 100vw;
+            height:100vh;
+            background-color: gray;
+        }
+        main{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: salmon;
+            height: 500px;
+        }
+        aside{
+            background-color: white;
+            padding: 5px;
+            border: 1px solid;
+            margin: 10px;
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alinhameto dos elementos empcotado no cross-axis com propriedade align-content </h1>
+    </header>
+    <main>
+        <aside>A</aside>
+        <aside>B</aside>
+        <aside>C</aside>
+        <aside>D</aside>
+        <aside>E</aside>
+        <aside>F</aside>
+        <aside>G</aside>
+        <aside>H</aside>
+        <aside>I</aside>
+        <aside>J</aside>
+    </main>
+</body>
+</html>
