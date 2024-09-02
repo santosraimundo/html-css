@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia dos items flexbox</title>
+    <style>
+        html,body{
+            font-family: 'Courier New', Courier, monospace;
+            width: 100vw;
+            height: 100vh;
+        }
+        main{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: aquamarine;
+            min-height: 800px;
+
+        }
+        div{
+            background-color: darkgoldenrod;
+            margin: 5px;
+            width: 100px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+
+        }
+        .ver1{
+            align-self: flex-start;
+        }
+        .ver4{
+            align-self: flex-start;
+            order: 3;
+        }
+        .ver3{
+            align-self: flex-end;
+        }
+        .ver2{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Propriedade do Items Align-Self</h1>
+    </header>
+    <main>
+        <div class="ver0">A</div>
+        <div class="ver1">B</div>
+        <div class="ver2">C</div>
+        <div class="ver3">D</div>
+        <div class="ver4">F</div>
+    </main>
+</body>
+</html>
