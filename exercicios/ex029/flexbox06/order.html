@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia dos items flexbox</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header>h1{
+            padding: 10px;
+            text-align:center;
+        }
+        main{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            background-color: darkkhaki;
+            height: 200px;
+        }
+        section{
+            background-color:crimson;
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            padding: 10px;
+
+        }
+        .i1{
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anatomia das propriedades dos items do flexbox</h1>
+    </header>
+    <main>
+        <section class="i1">HTML5</section>
+        <section class="i2">CSS3</section>
+        <section class="i3">JS</section>
+        <section class="i4">REACTJS</section>
+        <section class="i5">C#</section>
+        <section class="i6">PYTHON</section>
+        <section class="i7">MYSQL</section>
+        <section class="i8">BOOTSTRAP</section>
+    </main>
+</body>
+</html>
