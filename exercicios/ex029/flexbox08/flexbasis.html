@@ -3,8 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propriedade Flex Basis<title>
+    <title>Propriedes Flex Basis</title>
 </head>
+<style>
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background-color: darkkhaki;
+    }
+    header>h1{
+        color: white;
+        padding: 10px;
+    }
+    main{
+        display: flex;
+        flex-flow:row nowrap;
+        background-color: white;
+        height: 500px;
+    }
+    aside{
+        background-color: darkblue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        flex-basis: 200px;
+        align-self: end;
+    }
+    input[type="button"]{
+        background-color: darkblue;
+        color: white;
+        font-weight: bold;
+        margin: 5px;
+        flex-basis: 200px;
+        height: 90px;
+        align-self: center;
+    }
+    input[type="button"]:hover{
+        background-color: darkgoldenrod;
+        cursor: pointer;
+    }
+</style>
 <body>
     <header>
         <h1>A propriedade flex basis é usada para aumentar o tamanho de um item</h1>
@@ -14,6 +58,9 @@
         <aside>HTML</aside>
         <aside>BOOSTRAP</aside>
         <aside>C#</aside>
+        <form action="mostra.php">
+            <a href="https://kb.netlogs.com.br/s/tabela-de-bips-de-placa-mae/" target="_blank" rel="external"><input type="button" value="Tabelas de bips da placa mãe"></a>
+        </form>
     </main>
 </body>
 </html>
