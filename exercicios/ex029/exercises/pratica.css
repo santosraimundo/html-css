@@ -29,10 +29,11 @@ li{
     background-color: darkgoldenrod;
     flex-basis: 200px;
     border-radius: 5px;
-    
+
 }
 li.home{
-    
+    flex-shrink: 2;
+    flex-grow: 2;
 }
 a{
     color: white;
