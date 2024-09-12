@@ -26,6 +26,12 @@ ul{
 li{
     margin: 10px;
     list-style-type: none;
+    background-color: darkgoldenrod;
+    flex-basis: 200px;
+    border-radius: 5px;
+    
+}
+li.home{
     
 }
 a{
