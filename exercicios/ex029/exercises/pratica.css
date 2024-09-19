@@ -41,6 +41,10 @@ li{
     padding-bottom: 15px;
 
 }
+li:hover{
+    background-color: #0e0ef8;
+    cursor: pointer;
+}
 li.home{
     flex-shrink: 2;
     flex-grow: 2;
@@ -52,7 +56,7 @@ li.source{
 a{
     color: white;
     font-size: 1.5em;
-    
+    text-decoration: none;
     
     
 }
