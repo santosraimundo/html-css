@@ -4,15 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Short hand</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        html, body{
+            width: 100vw;
+            height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: #19012e;
+        }
+        header#father{
+            display: flex;
+            flex-flow: column nowrap;
+            padding: 15px;
+            
+            
+        }
+        h1#son{
+            color: white;
+            flex:auto;
+            align-self: center;
+        }
+        main#container{
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: white;
+            height: 800px;
+
+        }
+        section{
+            color:black;
+            margin: 20px;
+            background-color:darkgoldenrod ;
+            padding: 12px;
+            align-self: start;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+        section#first{
+            flex: 1 4 200px;
+            order: 2;
+
+        }
+        section#second{
+            flex: 2 5 200px;
+
+        }
+        section#third{
+            flex: 3 6 200px;
+            order: -1;
+        }
+        footer#mother{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        p#daughter{
+            color: white;
+            padding-top: 25px ;
+        }
+        
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Short das propriedades Flex-basis, grow e shrink</h1>
+    <header id="father">
+        <h1 id="son">Short das propriedades Flex-basis, grow e shrink</h1>
     </header>
-    <main>
+    <main id="container">
         <section id="first">S</section>
         <section id="second">M</section>
         <section id="third">B</section>
     </main>
+    <footer id="mother"><p id="daughter"> created by: Santos Raimundo</p></footer>
 </body>
 </html>
