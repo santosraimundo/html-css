@@ -14,7 +14,9 @@ html, body{
 }
 header{
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 h1{
     text-align: center;
@@ -23,45 +25,5 @@ h1{
     color: white;
     font-weight: normal;
 }
-ul{
-    background-color: #0e0e7e;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    padding: 10px;
-}
-li{
-    margin: 10px;
-    list-style-type: none;
-    background-color: darkgoldenrod;
-    border-radius: 5px;
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
 
-}
-li:hover{
-    background-color: #0e0ef8;
-    cursor: pointer;
-    box-shadow: 2px 2px 2px #0000009e;
-}
-li#home{
-    flex: 3 2 auto;
-}
-li#source{
-   
-    flex: 3  2 auto;
-}
-li#news{
-    flex: 3 2 auto;
-}
-li#about{
-    flex: 3 2 auto;
-}
-a.row{
-    color: white;
-    font-size: 1.5em;
-    text-decoration: none;
-    
-    
-}
+
