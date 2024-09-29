@@ -14,16 +14,46 @@ html, body{
 }
 header{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column nowrap;
+    justify-content:center;
     align-items: center;
+    background-color: #19197b;
+    height: 150px;
 }
 h1{
-    text-align: center;
-    padding: 10px;
-    font-size: 2.5em;
+    padding-top: 20px;
+    font-size: 2em;
     color: white;
     font-weight: normal;
+    flex: 0 0 100px;
 }
+nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    padding-bottom: 20px;
+}
+header>nav>a{
+    margin: 10px;
+    font-size: 1.5em;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+header>nav>a:hover{
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: darkgoldenrod;
+    color: white;
+}
+footer{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: end;
+}
+
 
 
