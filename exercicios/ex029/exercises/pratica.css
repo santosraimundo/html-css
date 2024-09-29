@@ -35,7 +35,7 @@ nav{
 }
 header>nav>a{
     margin: 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
     background-color: white;
     padding: 10px;
     border-radius: 8px;
@@ -54,6 +54,7 @@ footer{
     flex-flow: column nowrap;
     align-content: end;
 }
+
 
 
 
