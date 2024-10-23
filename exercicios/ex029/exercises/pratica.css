@@ -49,12 +49,26 @@ header>nav>a:hover{
     background-color: darkgoldenrod;
     color: white;
 }
+main{
+    background-color: white;
+    height: 500px;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 footer{
     display: flex;
-    flex-flow: column nowrap;
-    align-content: end;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
+footer p{
+    color: #fbfbff;
+    font-weight: bold;
+    font-size: 0.80em;
+
+}
 
 
 
